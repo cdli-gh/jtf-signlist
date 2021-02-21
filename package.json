@@ -1,0 +1,20 @@
+{
+  "name": "jtf-signlist",
+  "version": "0.0.1",
+  "description": "cuneiform signlist api",
+  "main": "index.js",
+  "scripts": {
+    "test": "test.js"
+  },
+  "keywords": [
+    "cuneiform",
+    "signlist",
+    "unicode",
+    "api"
+  ],
+  "author": "Ilya Khait",
+  "license": "MIT",
+  "dependencies": {
+    "xml2js": "^0.4.23"
+  }
+}
