@@ -1,0 +1,47 @@
+<!-- DTD signs ... -->
+<!-- (C) ... Fri Dec  2 17:25:10 2022 -->
+<!ELEMENT signs (sign)* >
+<!-- sign=1733 -->
+<!ELEMENT unicode (#PCDATA) >
+<!-- #PCDATA=1 -->
+<!ELEMENT name (#PCDATA) >
+<!-- #PCDATA=1 -->
+<!ELEMENT unicode_empty  EMPTY >
+<!ELEMENT determinative (value)* >
+<!-- value=42 -->
+	<!-- position : ... -->
+	<!ATTLIST determinative position CDATA #IMPLIED >
+<!ELEMENT values (syllabic|technical|logographic|numeral|determinative)* >
+<!-- syllabic=304 | technical=4 | logographic=1596 | numeral=111 | determinative=39 -->
+<!ELEMENT logographic (value)* >
+<!-- value=5093 -->
+<!ELEMENT technical (value)* >
+<!-- value=4 -->
+<!ELEMENT syllabic (value)* >
+<!-- value=1580 -->
+<!ELEMENT numeral (value)* >
+<!-- value=111 -->
+<!ELEMENT syllabars (borger_1981|borger_2004)* >
+<!-- borger_1981=1731 | borger_2004=1731 -->
+<!ELEMENT borger_1981 (#PCDATA) >
+<!-- #PCDATA=1 -->
+<!ELEMENT value (#PCDATA) >
+<!-- #PCDATA=1 -->
+	<!-- in_question : ... -->
+	<!ATTLIST value in_question CDATA #IMPLIED >
+	<!-- text : ... -->
+	<!ATTLIST value text CDATA #IMPLIED >
+	<!-- main : ... -->
+	<!ATTLIST value main CDATA #IMPLIED >
+	<!-- period : ... -->
+	<!ATTLIST value period CDATA #IMPLIED >
+<!ELEMENT unicode_name (#PCDATA) >
+<!-- #PCDATA=1 -->
+<!ELEMENT borger_2004 (#PCDATA) >
+<!-- #PCDATA=1 -->
+	<!-- NAME : ... -->
+	<!ATTLIST borger_2004 NAME CDATA #IMPLIED >
+	<!-- name : ... -->
+	<!ATTLIST borger_2004 name CDATA #IMPLIED >
+<!ELEMENT sign (unicode_name|syllabars|values|name|unicode_empty|unicode)* >
+<!-- unicode_name=1733 | syllabars=1733 | values=1733 | name=1733 | unicode_empty=741 | unicode=1719 -->
